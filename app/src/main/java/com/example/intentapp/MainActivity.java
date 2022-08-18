@@ -22,8 +22,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent inext;
+
                 inext = new Intent(MainActivity.this,nextActivity.class);
+                inext.putExtra("title","HOME");
+                inext.putExtra("student name","haseeb");
+                inext.putExtra("roll no",120);
+
+
                 startActivity(inext);
+
             }
         });
 
